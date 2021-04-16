@@ -6,5 +6,11 @@
 			"dependsOn": [],
 			"customAuth": false
 		}
+	},
+	"storage": {
+		"SupplementImages": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
 	}
 }

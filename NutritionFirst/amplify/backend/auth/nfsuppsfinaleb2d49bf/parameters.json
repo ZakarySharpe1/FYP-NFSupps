@@ -1,6 +1,6 @@
 {
     "identityPoolName": "nfsuppsfinaleb2d49bf_identitypool_eb2d49bf",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "nfsuppeb2d49bf",
     "userPoolName": "nfsuppsfinaleb2d49bf_userpool_eb2d49bf",
     "autoVerifiedAttributes": [
