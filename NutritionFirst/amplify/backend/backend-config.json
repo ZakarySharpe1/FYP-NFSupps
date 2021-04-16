@@ -26,5 +26,30 @@
 			"service": "Lambda",
 			"dependsOn": []
 		}
+	},
+	"api": {
+		"nfsuppsfinal": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [
+						{
+							"authenticationType": "API_KEY",
+							"apiKeyConfig": {
+								"description": "Guest users have access to supplements",
+								"apiKeyExpirationDays": 365
+							}
+						}
+					],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authnfsuppsfinaleb2d49bf"
+						}
+					}
+				}
+			}
+		}
 	}
 }
