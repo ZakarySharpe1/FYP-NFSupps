@@ -1,6 +1,6 @@
 /* Global Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -9,11 +9,11 @@
 }
 
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h5 {
 }
 
 a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -62,8 +62,8 @@ a {
 /* Nav Section */
 
 .main-head {
-  background: #131c27;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 nav {
@@ -86,14 +86,15 @@ nav ul {
 
 #logo {
   flex: 2 1 40rem;
-  font-family: 'Pattaya', sans-serif;
+  font-family: "Pattaya", sans-serif;
   font-weight: 400;
 }
 
 /* Hero Section */
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./assets/hero-background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./assets/image_4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -118,9 +119,10 @@ nav ul {
 /* Featured Books and Books Section */
 
 .featured-head {
-  background: #343c44;
+  background: #ffffff;
   padding: 2rem;
-  color: white;
+  padding-top: 30px;
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +147,7 @@ nav ul {
   height: 28rem;
   margin: 3rem 4rem;
   border-top: 1px solid #efefef;
-  background: floralwhite;
+  background: rgb(255, 255, 255);
 }
 
 .featured-list {
@@ -188,7 +190,7 @@ nav ul {
   width: 90%;
   margin: auto;
   height: 80vh;
-  text-align: center
+  text-align: center;
 }
 
 .detail-image {
