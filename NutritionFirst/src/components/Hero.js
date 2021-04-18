@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section className="hero">
             <h2>NutritionFirst</h2>
-            <h3>Supplements, <br />when you need then the most</h3>
+            <h3>Supplements & Nutrition, <br />for when you need it the most</h3>
             <Link className="btn" to="/books">View All Supplements</Link>
         </section>
     )
