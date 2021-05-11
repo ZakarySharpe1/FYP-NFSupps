@@ -27,7 +27,7 @@ const BookDetails = () => {
         <h2>{title}</h2>
         <p>{description}</p>
         <h3>{author}</h3>
-        <h4>Price - $ {price}</h4>
+        <h4>Price - £ {price}</h4>
         <button
           className="btn"
           onClick={() => {

@@ -31,7 +31,6 @@ const BookProvider = ({ children }) => {
   const fetchBooks = async () => {
     try {
       setLoading(true);
-      // Switch authMode to API_KEY for public access
       const { data } = await API.graphql({
         query: listBooks,
         authMode: "API_KEY"

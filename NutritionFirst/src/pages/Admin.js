@@ -53,7 +53,7 @@ const Admin = () => {
             <AmplifyAuthenticator>
                 <section>
                     <header className="form-header">
-                        <h3>Add New Book</h3>
+                        <h3>Add New Supplement</h3>
                         <AmplifySignOut></AmplifySignOut>
                     </header>
                     <form className="form-wrapper" onSubmit={handleSubmit}>
@@ -66,48 +66,48 @@ const Admin = () => {
                         </div>
                         <div className="form-fields">
                             <div className="title-form">
-                                <p><label htmlFor="title">Title</label></p>
+                                <p><label htmlFor="title">Supplement Name</label></p>
                                 <p><input
                                     name="email"
                                     type="title"
-                                    placeholder="Type the title"
+                                    placeholder="Insert Supplement Name"
                                     onChange={(e) => setBookDetails({ ...bookDetails, title: e.target.value })}
                                     required
                                 /></p>
                             </div>
                             <div className="description-form">
-                                <p><label htmlFor="description">Description</label></p>
+                                <p><label htmlFor="description">Description of Supplement</label></p>
                                 <p><textarea
                                     name="description"
                                     type="text"
                                     rows="8"
-                                    placeholder="Type the description of the book"
+                                    placeholder="Type the description of the Supplement"
                                     onChange={(e) => setBookDetails({ ...bookDetails, description: e.target.value })}
                                     required
                                 /></p>
                             </div>
                             <div className="author-form">
-                                <p><label htmlFor="author">Author</label></p>
+                                <p><label htmlFor="author">Manufacturer</label></p>
                                 <p><input
                                     name="author"
                                     type="text"
-                                    placeholder="Type the author's name"
+                                    placeholder="Type the manufacturer's name"
                                     onChange={(e) => setBookDetails({ ...bookDetails, author: e.target.value })}
                                     required
                                 /></p>
                             </div>
                             <div className="price-form">
-                                <p><label htmlFor="price">Price ($)</label>
+                                <p><label htmlFor="price">Price (£)</label>
                                     <input
                                         name="price"
                                         type="text"
-                                        placeholder="What is the Price of the book (USD)"
+                                        placeholder="What is the Price of the Supplement (GBP)"
                                         onChange={(e) => setBookDetails({ ...bookDetails, price: e.target.value })}
                                         required
                                     /></p>
                             </div>
                             <div className="featured-form">
-                                <p><label>Featured?</label>
+                                <p><label>Front page featuring?</label>
                                     <input type="checkbox"
                                         className="featured-checkbox"
                                         checked={bookDetails.featured}
@@ -116,7 +116,7 @@ const Admin = () => {
                                 </p>
                             </div>
                             <div className="submit-form">
-                                <button className="btn" type="submit">Submit</button>
+                                <button className="btn" type="submit">Upload</button>
                             </div>
                         </div>
                     </form>

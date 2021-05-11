@@ -1,6 +1,3 @@
-/* eslint-disable */
-// this is an auto generated file. This will be overwritten
-
 export const processOrder = /* GraphQL */ `
   mutation ProcessOrder($input: ProcessOrderInput!) {
     processOrder(input: $input)
